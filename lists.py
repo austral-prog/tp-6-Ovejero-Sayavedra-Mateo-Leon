@@ -28,8 +28,8 @@ def check_lists(list_to_compare1, list_to_compare2):
         return False
 
 def list_to_list(list_of_lists_to_modify):
-    del list_of_lists_to_modify[0][2]    # Elimina 3 de [1, 2, 3]
-    del list_of_lists_to_modify[1][0]    # Elimina 4 de [4, 5, 6, 7, 8]
-    del list_of_lists_to_modify[1][-1]   # Elimina el último (8) de [5, 6, 7, 8]
-    list_of_lists_to_modify[2][0:2] = [] # Elimina 9 de [9, 10, 11, 12]
+    del list_of_lists_to_modify[0][2]
+    del list_of_lists_to_modify[1][0]
+    del list_of_lists_to_modify[1][-1]
+    list_of_lists_to_modify[2][0:2] = []
     return list_of_lists_to_modify
