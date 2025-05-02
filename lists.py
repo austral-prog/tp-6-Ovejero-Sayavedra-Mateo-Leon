@@ -7,7 +7,7 @@ def remove_elements(list_to_remove_elements):
         del list_to_remove_elements[0]
     return list_to_remove_elements
 
-def add_element(list_to_add_elements):
+def add_elements(list_to_add_elements):
     list_to_add_elements.insert(0, "Pink")
     list_to_add_elements.append('Yellow')
     return list_to_add_elements
@@ -18,11 +18,12 @@ def is_empty (list_to_check):
     else:
         return False
         
-def check_list(list_to_compare1, list_to_compare2):
-    element3_list1 = list_to_compare1[2]
-    element3_list2 = list_to_compare2[2]
-    if element3_list1 == element3_list2:
-        return True
+def check_lists(list_to_compare1, list_to_compare2):
+    if len(list_to_compare1) >= 3 and len(list_to_compare2) >= 3:
+        if list_to_compare1[2] == list_to_compare2[2]:
+            return True
+        else:
+            return False
     else:
         return False
 
