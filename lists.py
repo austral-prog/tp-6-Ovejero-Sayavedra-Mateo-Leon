@@ -33,3 +33,9 @@ def list_to_list(list_of_lists_to_modify):
     del list_of_lists_to_modify[1][-1]
     list_of_lists_to_modify[2][0:2] = []
     return list_of_lists_to_modify
+
+def list_of_lists(list_of_lists_to_modify):
+    list_of_lists_to_modify[0]= list_of_lists_to_modify[0][:2]
+    list_of_lists_to_modify[1]= list_of_lists_to_modify[1][1:4]
+    list_of_lists_to_modify[2]= list_of_lists_to_modify[2][len(list_of_lists_to_modify[2])-2:len(list_of_lists_to_modify[2])]
+    return list_of_lists_to_modify
